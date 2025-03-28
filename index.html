@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LSSHRT - Services de développement web, bots Discord, scripts FiveM et bots Python sur mesure">
+    <meta name="theme-color" content="#6366f1">
+    <title>LSSHRT - Services numériques</title>
+    
+    <!-- Préchargement des ressources critiques -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://assets10.lottiefiles.com">
+    
+    <!-- Style inline critique pour éviter le FOUC (Flash of Unstyled Content) -->
+    <style>
+        body, html { opacity: 1 !important; visibility: visible !important; }
+        .preloader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #1e293b; z-index: 9999; display: flex; align-items: center; justify-content: center; }
+        .hero-content, .hero-title, .typewriter, .badge, .cta-button { opacity: 1 !important; visibility: visible !important; transform: none !important; }
+        .hero-title { display: block; color: white; font-size: 3rem; line-height: 1.2; margin-bottom: 1rem; }
+        .hero-title .highlight { color: #6366f1; }
+        .hero-content { backdrop-filter: blur(0) !important; -webkit-backdrop-filter: blur(0) !important; }
+    </style>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Script de détection JavaScript et de correction du bug d'affichage -->
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+    <script src="fix-animations.js"></script>
+</head>
+<body class="loading" data-figma-animations="true">
+    <!-- Contenu alternatif sans JavaScript -->
+    <noscript>
+        <div class="noscript-message">
+            <div class="container">
+                <h2>JavaScript est désactivé</h2>
+                <p>Pour profiter pleinement de ce site, veuillez activer JavaScript dans les paramètres de votre navigateur.</p>
+            </div>
+        </div>
+    </noscript>
+    
+    <!-- Curseur personnalisé -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <!-- Preloader avec animation améliorée -->
+    <div class="preloader">
+        <div class="loader-container">
+            <div class="loader"></div>
+            <div class="loader-text" data-text="LSSHRT">LSSHRT</div>
+        </div>
+    </div>
+    
+    <!-- Transition de page -->
+    <div class="page-transition"></div>
+
+    <header>
+        <nav>
+            <div class="logo" data-animation="logo">
+                <!-- Logo animé -->
+                <div class="logo-container">
+
+                    <div class="logo-text">LS<span class="logo-highlight">SHRT</span></div>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="nav-item" data-animation="nav-item" data-delay="0">Accueil</a></li>
+                <li><a href="#services" class="nav-item" data-animation="nav-item" data-delay="0.1">Services</a></li>
+                <li><a href="#portfolio" class="nav-item" data-animation="nav-item" data-delay="0.2">Portfolio</a></li>
+                <li><a href="#contact" class="nav-item" data-animation="nav-item" data-delay="0.3">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero parallax-container" data-section="hero">
+        <div class="hero-content" style="opacity: 1; visibility: visible;">
+            <span class="badge animate-pulse" style="opacity: 1; visibility: visible;" data-animation="badge">Freelance</span>
+            <h1 class="hero-title" data-splitting style="opacity: 1; visibility: visible;" data-animation="hero-title">Développeur <span class="highlight">Créatif</span> & Passionné</h1>
+            <div class="text-animation-container">
+                <p class="typewriter" style="opacity: 1; visibility: visible;" data-animation="typewriter">Développement web, bots et scripts</p>
+            </div>
+            <div class="animated-tags" data-animation="tags-container">
+                <span class="tag-item" data-animation="tag" data-delay="0">JavaScript</span>
+                <span class="tag-item" data-animation="tag" data-delay="0.1">Python</span>
+                <span class="tag-item" data-animation="tag" data-delay="0.2">React</span>
+                <span class="tag-item" data-animation="tag" data-delay="0.3">Node.js</span>
+                <span class="tag-item" data-animation="tag" data-delay="0.4">Discord</span>
+            </div>
+            <a href="#contact" class="cta-button animate-bounce" style="opacity: 1; visibility: visible;" data-animation="cta">
+                <span>Discutons de votre projet</span>
+                <svg class="btn-arrow" width="20" height="14" viewBox="0 0 20 14">
+                    <path d="M13 0L20 7L13 14" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <path d="M0 7H19" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </a>
+        </div>
+        
+        <!-- Éléments de parallaxe -->
+        <div class="parallax-bg"></div>
+        
+        <!-- Éléments de design avec effet de parallaxe -->
+        <div class="floating-shapes">
+            <div class="shape shape-1 animated-shape" data-speed="0.05" data-animation="shape"></div>
+            <div class="shape shape-2 animated-shape" data-speed="-0.05" data-animation="shape"></div>
+            <div class="shape shape-3 animated-shape" data-speed="0.08" data-animation="shape"></div>
+            <div class="shape shape-4 animated-shape" data-speed="-0.06" data-animation="shape"></div>
+            <div class="shape shape-5 animated-shape" data-speed="0.09" data-animation="shape"></div>
+            <div class="shape shape-6 animated-shape" data-speed="-0.03" data-animation="shape"></div>
+        </div>
+        
+        <!-- Effet de défilement -->
+        <div class="scroll-indicator" data-animation="scroll-indicator">
+            <div class="mouse">
+                <div class="scroll"></div>
+            </div>
+            <p>Défiler</p>
+        </div>
+    </section>
+
+    <section id="services" class="services" data-section="services">
+        <div class="section-header" data-animation="fade-up">
+            <span class="section-tag" data-animation="section-tag">Ce que je fais</span>
+            <h2 class="section-title" data-animation="section-title">Mes Services</h2>
+            <div class="section-line" data-animation="section-line"></div>
+            <p class="section-subtitle" data-animation="section-subtitle">Des solutions numériques adaptées à vos besoins</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card" data-animation="service-card" data-figma-morphing="true">
+                <div class="service-icon" data-animation="service-icon">
+                    <i class="fas fa-comment-dots"></i>
+                </div>
+                <h3 data-animation="service-title">Bots Discord</h3>
+                <p data-animation="service-desc">Création de bots Discord personnalisés pour gérer votre serveur et améliorer l'expérience utilisateur.</p>
+                <div class="service-hover-effect"></div>
+                <a href="#contact" class="service-link" data-animation="service-link">En savoir plus <span class="arrow">→</span></a>
+            </div>
+            <div class="service-card" data-animation="service-card" data-delay="0.2" data-figma-morphing="true">
+                <div class="service-icon" data-animation="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 data-animation="service-title">Développement Web</h3>
+                <p data-animation="service-desc">Conception et développement de sites internet modernes, réactifs et optimisés pour le référencement.</p>
+                <div class="service-hover-effect"></div>
+                <a href="#contact" class="service-link" data-animation="service-link">En savoir plus <span class="arrow">→</span></a>
+            </div>
+            <div class="service-card" data-animation="service-card" data-delay="0.4" data-figma-morphing="true">
+                <div class="service-icon" data-animation="service-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <h3 data-animation="service-title">Scripts FiveM</h3>
+                <p data-animation="service-desc">Création de scripts personnalisés pour FiveM afin d'enrichir l'expérience de jeu sur votre serveur.</p>
+                <div class="service-hover-effect"></div>
+                <a href="#contact" class="service-link" data-animation="service-link">En savoir plus <span class="arrow">→</span></a>
+            </div>
+            <div class="service-card" data-animation="service-card" data-delay="0.6" data-figma-morphing="true">
+                <div class="service-icon" data-animation="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 data-animation="service-title">Bots Python</h3>
+                <p data-animation="service-desc">Développement de bots automatisés en Python pour diverses plateformes et besoins spécifiques.</p>
+                <div class="service-hover-effect"></div>
+                <a href="#contact" class="service-link" data-animation="service-link">En savoir plus <span class="arrow">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio" data-section="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-animation="section-tag">Portfolio</span>
+                <h2 class="section-title" data-animation="section-title">Mes Réalisations Récentes</h2>
+                <div class="section-line" data-animation="section-line"></div>
+            </div>
+            
+            <div class="portfolio-filter" data-animation="filter-container">
+                <button class="filter-btn active" data-filter="all" data-animation="filter-btn" data-delay="0">Tous les projets</button>
+                <button class="filter-btn" data-filter="discord" data-animation="filter-btn" data-delay="0.1">Discord</button>
+                <button class="filter-btn" data-filter="web" data-animation="filter-btn" data-delay="0.2">Web</button>
+                <button class="filter-btn" data-filter="fivem" data-animation="filter-btn" data-delay="0.3">FiveM</button>
+                <button class="filter-btn" data-filter="python" data-animation="filter-btn" data-delay="0.4">Python</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Projet Discord Bot -->
+                <div class="portfolio-item" data-category="discord" data-animation="portfolio-item" data-delay="0.1" data-figma-effect="true">
+                    <img src="images/discordbot.png" alt="Bot Discord" data-animation="portfolio-image">
+                    <div class="portfolio-overlay" data-animation="portfolio-overlay">
+                        <div class="overlay-content">
+                            <span class="portfolio-category" data-animation="portfolio-category">Discord</span>
+                            <h3 data-animation="portfolio-title">Bot Discord</h3>
+                            <p data-animation="portfolio-desc">Bot de modération et d'assistance avec commandes personnalisées</p>
+                            <a href="#" class="portfolio-btn" data-animation="portfolio-btn">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Site E-commerce -->
+                <div class="portfolio-item" data-category="web" data-animation="portfolio-item" data-delay="0.2" data-figma-effect="true">
+                    <img src="images/siteecommerce.png" alt="Site Web E-commerce" data-animation="portfolio-image">
+                    <div class="portfolio-overlay" data-animation="portfolio-overlay">
+                        <div class="overlay-content">
+                            <span class="portfolio-category" data-animation="portfolio-category">Web</span>
+                            <h3 data-animation="portfolio-title">Site E-commerce</h3>
+                            <p data-animation="portfolio-desc">Plateforme de vente en ligne avec système de paiement sécurisé</p>
+                            <a href="#" class="portfolio-btn" data-animation="portfolio-btn">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Script FiveM -->
+                <div class="portfolio-item" data-category="fivem" data-animation="portfolio-item" data-delay="0.3" data-figma-effect="true">
+                    <img src="images/scriptfivem.png" alt="Script FiveM" data-animation="portfolio-image">
+                    <div class="portfolio-overlay" data-animation="portfolio-overlay">
+                        <div class="overlay-content">
+                            <span class="portfolio-category" data-animation="portfolio-category">FiveM</span>
+                            <h3 data-animation="portfolio-title">Script FiveM</h3>
+                            <p data-animation="portfolio-desc">Systèmes avancés pour serveurs de jeu GTA RP</p>
+                            <a href="#" class="portfolio-btn" data-animation="portfolio-btn">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bot Python -->
+                <div class="portfolio-item" data-category="python" data-animation="portfolio-item" data-delay="0.4" data-figma-effect="true">
+                    <img src="images/botpython.png" alt="Bot Python" data-animation="portfolio-image">
+                    <div class="portfolio-overlay" data-animation="portfolio-overlay">
+                        <div class="overlay-content">
+                            <span class="portfolio-category" data-animation="portfolio-category">Python</span>
+                            <h3 data-animation="portfolio-title">Bot Python</h3>
+                            <p data-animation="portfolio-desc">Automatisation de tâches et traitement de données</p>
+                            <a href="#" class="portfolio-btn" data-animation="portfolio-btn">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta" data-animation="portfolio-cta">
+                <a href="#contact" class="btn-secondary" data-animation="btn-secondary">Discutons de votre projet</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section" data-section="stats">
+        <div class="stats-container">
+            <div class="stat-item" data-animation="counter" data-target="50" data-figma-counter="true">
+                <div class="stat-icon" data-animation="stat-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="stat-number" data-animation="stat-number">0</div>
+                <div class="stat-label" data-animation="stat-label">Projets<br>Réalisés</div>
+            </div>
+            <div class="stat-item" data-animation="counter" data-target="20" data-figma-counter="true">
+                <div class="stat-icon" data-animation="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-number" data-animation="stat-number">0</div>
+                <div class="stat-label" data-animation="stat-label">Clients<br>Satisfaits</div>
+            </div>
+            <div class="stat-item" data-animation="counter" data-target="5" data-figma-counter="true">
+                <div class="stat-icon" data-animation="stat-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="stat-number" data-animation="stat-number">0</div>
+                <div class="stat-label" data-animation="stat-label">Années<br>d'Expérience</div>
+            </div>
+            <div class="stat-item" data-animation="counter" data-target="100" data-figma-counter="true">
+                <div class="stat-icon" data-animation="stat-icon">
+                    <i class="fas fa-coffee"></i>
+                </div>
+                <div class="stat-number" data-animation="stat-number">0</div>
+                <div class="stat-label" data-animation="stat-label">Tasses de<br>Café</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact" data-section="contact">
+        <div class="section-header" data-animation="fade-up">
+            <span class="section-tag" data-animation="section-tag">Discutons de votre projet</span>
+            <h2 class="section-title" data-animation="section-title">Me Contacter</h2>
+            <div class="section-line" data-animation="section-line"></div>
+            <p class="section-subtitle" data-animation="section-subtitle">Je vous répondrai dans les plus brefs délais</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item" data-animation="contact-item" data-delay="0.1" data-figma-effect="true">
+                    <div class="contact-icon" data-animation="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text" data-animation="contact-text">
+                        <h4 data-animation="contact-title">Email</h4>
+                        <p data-animation="contact-detail">email@exemple.com</p>
+                    </div>
+                </div>
+                <div class="contact-item" data-animation="contact-item" data-delay="0.2" data-figma-effect="true">
+                    <div class="contact-icon" data-animation="contact-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <div class="contact-text" data-animation="contact-text">
+                        <h4 data-animation="contact-title">Discord</h4>
+                        <p data-animation="contact-detail">lsshrt#0000</p>
+                    </div>
+                </div>
+                <div class="contact-item" data-animation="contact-item" data-delay="0.3" data-figma-effect="true">
+                    <div class="contact-icon" data-animation="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="contact-text" data-animation="contact-text">
+                        <h4 data-animation="contact-title">GitHub</h4>
+                        <p data-animation="contact-detail">github.com/lsshrt</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial" data-animation="testimonial" data-figma-effect="true">
+                    <div class="quote-icon" data-animation="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="quote-text" data-animation="quote-text">Le travail livré par LSSHRT était parfait. Communication claire et délais respectés. Je recommande vivement ses services !</p>
+                    <div class="quote-author" data-animation="quote-author">
+                        <div class="author-img" data-animation="author-img">
+                            <img src="https://via.placeholder.com/60x60/6366f1/ffffff?text=Client" alt="Client">
+                        </div>
+                        <div class="author-info" data-animation="author-info">
+                            <h5 data-animation="author-name">Jean Dupont</h5>
+                            <span data-animation="author-position">PDG, Entreprise XYZ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form" data-animation="contact-form" data-figma-effect="true">
+                <div class="form-header" data-animation="form-header">
+                    <h3 data-animation="form-title">Envoyez-moi un message</h3>
+                    <p data-animation="form-subtitle">Décrivez votre projet et vos besoins</p>
+                </div>
+                
+                <div class="form-group" data-animation="form-group" data-delay="0.1">
+                    <label for="name" data-animation="form-label">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom" required data-animation="form-input">
+                </div>
+                
+                <div class="form-group" data-animation="form-group" data-delay="0.2">
+                    <label for="email" data-animation="form-label">Email</label>
+                    <input type="email" id="email" placeholder="Votre email" required data-animation="form-input">
+                </div>
+                
+                <div class="form-group" data-animation="form-group" data-delay="0.3">
+                    <label for="project" data-animation="form-label">Type de projet</label>
+                    <select id="project" required data-animation="form-select">
+                        <option value="" disabled selected>Sélectionner</option>
+                        <option value="discord">Bot Discord</option>
+                        <option value="web">Site Web</option>
+                        <option value="fivem">Script FiveM</option>
+                        <option value="python">Bot Python</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" data-animation="form-group" data-delay="0.4">
+                    <label for="message" data-animation="form-label">Message</label>
+                    <textarea id="message" placeholder="Décrivez votre projet" required data-animation="form-textarea"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button" data-animation="submit-button">
+                    <span>Envoyer</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer data-section="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-logo" data-animation="footer-logo">
+                    <div class="logo-text" data-animation="footer-logo-text">LS<span class="logo-highlight">SHRT</span></div>
+                    <p class="footer-desc" data-animation="footer-desc">Développement de solutions numériques sur mesure pour répondre à vos besoins.</p>
+                </div>
+                <div class="footer-nav" data-animation="footer-nav">
+                    <h4 data-animation="footer-heading">Navigation</h4>
+                    <a href="#accueil" data-animation="footer-link" data-delay="0.1">Accueil</a>
+                    <a href="#services" data-animation="footer-link" data-delay="0.2">Services</a>
+                    <a href="#portfolio" data-animation="footer-link" data-delay="0.3">Portfolio</a>
+                    <a href="#contact" data-animation="footer-link" data-delay="0.4">Contact</a>
+                </div>
+                <div class="footer-social" data-animation="footer-social">
+                    <h4 data-animation="footer-heading">Retrouvez-moi</h4>
+                    <div class="social-links" data-animation="social-links">
+                        <a href="#" class="social-link" data-animation="social-icon" data-delay="0.1">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" class="social-link" data-animation="social-icon" data-delay="0.2">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" data-animation="social-icon" data-delay="0.3">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-animation="copyright">© 2023 LSSHRT. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="back-to-top" id="backToTop" data-animation="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Chargement différé des scripts pour optimiser les performances -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="script-new.js"></script>
+    
+    <!-- Script qui supprime la classe loading après le chargement complet -->
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.remove('loading');
+            document.body.classList.add('loaded');
+            
+            // S'assurer que le préchargeur est bien caché
+            const preloader = document.querySelector('.preloader');
+            if (preloader) {
+                preloader.style.opacity = '0';
+                setTimeout(function() {
+                    preloader.style.display = 'none';
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html> 
